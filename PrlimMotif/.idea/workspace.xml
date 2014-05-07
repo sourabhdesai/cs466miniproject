@@ -4,7 +4,7 @@
     <list default="true" id="4a1fe8ed-1196-44f4-b913-c59febfd7470" name="Default" comment="" />
     <ignored path="PrlimMotif.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="4a1fe8ed-1196-44f4-b913-c59febfd7470" time="1399444112886" ignored="false" />
+    <file path="/Main.java" changelist="4a1fe8ed-1196-44f4-b913-c59febfd7470" time="1399477136773" ignored="false" />
     <file path="/a.html" changelist="4a1fe8ed-1196-44f4-b913-c59febfd7470" time="1399436324462" ignored="false" />
     <file path="/a.java" changelist="4a1fe8ed-1196-44f4-b913-c59febfd7470" time="1399436325899" ignored="false" />
     <file path="/a.xml" changelist="4a1fe8ed-1196-44f4-b913-c59febfd7470" time="1399436332546" ignored="false" />
@@ -71,10 +71,10 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="86" selection-start="3180" selection-end="3180" vertical-scroll-proportion="0.49612403">
+            <state line="255" column="44" selection-start="8468" selection-end="8468" vertical-scroll-proportion="2.015504">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3464#3472#0" expanded="true" />
+                <element signature="e#3475#3483#0" expanded="true" />
                 <element signature="method#getMotifLength#0;class#Main#0" expanded="false" />
                 <element signature="method#benchmark#0;class#Main#0" expanded="false" />
               </folding>
@@ -174,8 +174,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -416,10 +416,34 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3475#3483#0" expanded="true" />
+            <element signature="method#getMotifLength#0;class#Main#0" expanded="false" />
+            <element signature="method#benchmark#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3475#3483#0" expanded="true" />
+            <element signature="method#getMotifLength#0;class#Main#0" expanded="false" />
+            <element signature="method#benchmark#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="71" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3464#3472#0" expanded="true" />
+            <element signature="e#3475#3483#0" expanded="true" />
             <element signature="method#getMotifLength#0;class#Main#0" expanded="false" />
             <element signature="method#benchmark#0;class#Main#0" expanded="false" />
           </folding>
@@ -448,10 +472,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="86" selection-start="3180" selection-end="3180" vertical-scroll-proportion="0.49612403">
+        <state line="255" column="44" selection-start="8468" selection-end="8468" vertical-scroll-proportion="2.015504">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3464#3472#0" expanded="true" />
+            <element signature="e#3475#3483#0" expanded="true" />
             <element signature="method#getMotifLength#0;class#Main#0" expanded="false" />
             <element signature="method#benchmark#0;class#Main#0" expanded="false" />
           </folding>

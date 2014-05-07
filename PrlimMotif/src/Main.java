@@ -38,8 +38,13 @@ public class Main {
 	public static void findMotif(int setnum) throws IOException {
         // Will try to implement with Gibbs Sampling as described here: http://bix.ucsd.edu/bioalgorithms/presentations/Ch12_RandAlgs.pdf
 
-        String[] sequences = getSequences(setnum);
+        String[] sequencesStrings = getSequences(setnum);
         int motifLength = getMotifLength(setnum);
+
+        Sequence[] sequences = new Sequence[sequencesStrings.length];
+        for (int i = 0; i < sequences.length; i++) {
+            sequences[i] = new Sequence(motifLength, sequencesStrings[i]);
+        }
 
         float[][] profile = new float[motifLength][4];
 
@@ -56,7 +61,10 @@ public class Main {
             // Fill Profile Matrix
             for (int sequenceIndex = 0; sequenceIndex < sequences.length; sequenceIndex++) {
 
-                String seq = sequences[sequenceIndex];
+                if (sequenceIndex == removedSequence)
+                    continue;
+
+                Sequence seq     = sequences[sequenceIndex];
                 int startPoint = startPoints[sequenceIndex];
 
                 for (int motifIndex = 0; motifIndex < motifLength; motifIndex++) {
@@ -65,16 +73,16 @@ public class Main {
 
                     switch (base) {
                         case 'A':
-                            profile[motifIndex][0]++;
+                            profile[motifIndex][0] += (float) ( 1 / sequences.length );
                             break;
                         case 'C':
-                            profile[motifIndex][1]++;
+                            profile[motifIndex][1] += (float) ( 1 / sequences.length );;
                             break;
                         case 'G':
-                            profile[motifIndex][2]++;
+                            profile[motifIndex][2] += (float) ( 1 / sequences.length );
                             break;
                         case 'T':
-                            profile[motifIndex][3]++;
+                            profile[motifIndex][3] += (float) ( 1 / sequences.length );
                             break;
                         default:
                             System.out.println("Houston we have a problem...");
@@ -85,15 +93,8 @@ public class Main {
 
             }
 
-            // Make profile matrix be the frequency of the bases, not the count
-            for (int motifIndex = 0; motifIndex < motifLength; motifIndex++) {
-                profile[motifIndex][0] /= sequences.length; // A
-                profile[motifIndex][1] /= sequences.length; // C
-                profile[motifIndex][2] /= sequences.length; // G
-                profile[motifIndex][3] /= sequences.length; // T
-            }
-
             // TODO: Rest of Gibbs Sampling Algorithm ... Refer to link above for help
+
 
         }
 	}
@@ -229,6 +230,43 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+    }
+
+    public static class Sequence {
+
+        private int motifStartIndex;
+        private final String sequence;
+        private final List<String> possibleMotifs;
+
+        public Sequence(int motifLength, String sequence) {
+            this.sequence = sequence;
+            this.possibleMotifs = new ArrayList<String>();
+            // fill in this.possibleMotifs with all possible l-mers of length == motifLength
+            for (int start =  0, end = motifLength; end < sequence.length();) {
+
+                this.possibleMotifs.add( this.sequence.substring(start, end) );
+
+                start++;
+                end++;
+            }
+
+            this.motifStartIndex = (int) Math.floor( Math.random() * this.sequence.length() );
+
+        }
+
+        public int length() {
+            return this.sequence.length();
+        }
+
+        public String getCurrentMotif() {
+            return this.possibleMotifs.get(this.motifStartIndex);
+        }
+
+        public char charAt(int index) {
+            return this.sequence.charAt(index);
+        }
+
 
     }
 
