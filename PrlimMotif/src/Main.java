@@ -1,9 +1,12 @@
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
 
 
 public class Main {
@@ -115,13 +118,68 @@ public class Main {
 		}
 			
 	}
+	
+	public static void findMotif(int setnum) {
+		File seqF = new File("data/set"+setnum+"/sequences.fa");
+		File mlenF = new File("data/set"+setnum+"/motiflength.txt");
+		
+		
+		try {
+			BufferedReader seqR =  new BufferedReader(new FileReader(seqF));
+			BufferedReader mlenR =  new BufferedReader(new FileReader(mlenF));
+			int mlen = Integer.parseInt(mlenR.readLine());
+			int lines=0;
+			while(seqR.readLine() != null) {
+				lines++;
+			}
+			String[] seqs = new String[lines];
+			seqR.close();
+			seqR = new BufferedReader(new FileReader(seqF));
+			int i=0;
+			while(seqR.readLine() != null) {
+				seqs[i]=seqR.readLine();
+				i++;
+			}
+			
+			//Diregard from here
+			int basescore = 4;
+			int count = 0;
+			int ind = 0;
+			//String[] possiMoti = new String[1000];
+			ArrayList<String> possMot = new ArrayList<String>();
+			int[][] location = new int[500][500];
+			int score = 0;
+			
+			int slen = mlen;
+			for(i=0; i<500-slen+1; i++) {
+				for(int j=0; j<500-slen+1; j++) {
+					score = 0;
+					for(int k=0; k<slen; k++) {
+						if(seqs[0].charAt(i+k) == seqs[2].charAt(j+k)) {
+							score ++;
+						}
+					}
+					if(score > basescore) {
+						//System.out.println(i+ ", " + j + ": " + initScore[i][j]);
+					}
+				}
+			}
+
+			seqR.close();
+			mlenR.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
 		//ml, nm, sl, sc
-		for(int i=0; i<10; i++) {
+		/*for(int i=0; i<10; i++) {
 			benchmark(8, 1, 500, 10, i);
 			benchmark(8, 0, 500, 10, i+10);
 			benchmark(8, 2, 500, 10, i+20);
@@ -129,7 +187,9 @@ public class Main {
 			benchmark(7, 1, 500, 10, i+40);
 			benchmark(8, 1, 500, 5, i+50);
 			benchmark(8, 1, 500, 20, i+60);		
-		}
+		}*/
+		
+		findMotif(0);
 
 	}
 
