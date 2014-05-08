@@ -4,7 +4,7 @@
     <list default="true" id="4a1fe8ed-1196-44f4-b913-c59febfd7470" name="Default" comment="" />
     <ignored path="PrlimMotif.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="4a1fe8ed-1196-44f4-b913-c59febfd7470" time="1399477136773" ignored="false" />
+    <file path="/Main.java" changelist="4a1fe8ed-1196-44f4-b913-c59febfd7470" time="1399508991019" ignored="false" />
     <file path="/a.html" changelist="4a1fe8ed-1196-44f4-b913-c59febfd7470" time="1399436324462" ignored="false" />
     <file path="/a.java" changelist="4a1fe8ed-1196-44f4-b913-c59febfd7470" time="1399436325899" ignored="false" />
     <file path="/a.xml" changelist="4a1fe8ed-1196-44f4-b913-c59febfd7470" time="1399436332546" ignored="false" />
@@ -71,12 +71,32 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="44" selection-start="8468" selection-end="8468" vertical-scroll-proportion="2.015504">
+            <state line="450" column="19" selection-start="15746" selection-end="15746" vertical-scroll-proportion="0.41860464">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3475#3483#0" expanded="true" />
-                <element signature="method#getMotifLength#0;class#Main#0" expanded="false" />
-                <element signature="method#benchmark#0;class#Main#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gibbs.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Gibbs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="37" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="method#baseToInt#0;class#Gibbs#0" expanded="false" />
+                <element signature="method#intToBase#0;class#Gibbs#0" expanded="false" />
+                <element signature="method#copyArray#0;class#Gibbs#0" expanded="false" />
+                <element signature="method#fillArray#0;class#Gibbs#0" expanded="false" />
+                <element signature="method#getSequences#0;class#Gibbs#0" expanded="false" />
+                <element signature="e#8291#8299#0" expanded="true" />
+                <element signature="method#getMotifLength#0;class#Gibbs#0" expanded="false" />
+                <element signature="method#benchmark#0;class#Gibbs#0" expanded="false" />
+                <element signature="method#Sequence#0;class#Sequence#0;class#Gibbs#0" expanded="false" />
+                <element signature="method#length#0;class#Sequence#0;class#Gibbs#0" expanded="false" />
+                <element signature="method#getCurrentMotif#0;class#Sequence#0;class#Gibbs#0" expanded="false" />
+                <element signature="method#charAt#0;class#Sequence#0;class#Gibbs#0" expanded="false" />
+                <element signature="method#setMotifStartIndex#0;class#Sequence#0;class#Gibbs#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -93,6 +113,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/lmer.java" />
+        <option value="$PROJECT_DIR$/src/Gibbs.java" />
       </list>
     </option>
   </component>
@@ -126,6 +148,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,24 +182,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrlimMotif" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrlimMotif" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,9 +200,9 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
@@ -227,19 +235,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -265,6 +260,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -339,12 +347,12 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14634146" sideWeight="0.6708229" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14634146" sideWeight="0.7169576" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2830424" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -419,9 +427,22 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3475#3483#0" expanded="true" />
-            <element signature="method#getMotifLength#0;class#Main#0" expanded="false" />
-            <element signature="method#benchmark#0;class#Main#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/set16/motif.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -431,9 +452,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3475#3483#0" expanded="true" />
-            <element signature="method#getMotifLength#0;class#Main#0" expanded="false" />
-            <element signature="method#benchmark#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -443,16 +461,8 @@
         <state line="50" column="71" selection-start="1335" selection-end="1335" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3475#3483#0" expanded="true" />
-            <element signature="method#getMotifLength#0;class#Main#0" expanded="false" />
-            <element signature="method#benchmark#0;class#Main#0" expanded="false" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/set0/motif.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/set0/motiflength.txt">
@@ -470,14 +480,66 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/set10/motif.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="25" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/set1/motif.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/set10/sequences.fa">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="5" selection-start="5180" selection-end="5180" vertical-scroll-proportion="0.6036217" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/set0/motif.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/set16/motif.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/lmer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="1" selection-start="320" selection-end="320" vertical-scroll-proportion="0.32945737">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Gibbs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="37" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="method#baseToInt#0;class#Gibbs#0" expanded="false" />
+            <element signature="method#intToBase#0;class#Gibbs#0" expanded="false" />
+            <element signature="method#copyArray#0;class#Gibbs#0" expanded="false" />
+            <element signature="method#fillArray#0;class#Gibbs#0" expanded="false" />
+            <element signature="method#getSequences#0;class#Gibbs#0" expanded="false" />
+            <element signature="e#8291#8299#0" expanded="true" />
+            <element signature="method#getMotifLength#0;class#Gibbs#0" expanded="false" />
+            <element signature="method#benchmark#0;class#Gibbs#0" expanded="false" />
+            <element signature="method#Sequence#0;class#Sequence#0;class#Gibbs#0" expanded="false" />
+            <element signature="method#length#0;class#Sequence#0;class#Gibbs#0" expanded="false" />
+            <element signature="method#getCurrentMotif#0;class#Sequence#0;class#Gibbs#0" expanded="false" />
+            <element signature="method#charAt#0;class#Sequence#0;class#Gibbs#0" expanded="false" />
+            <element signature="method#setMotifStartIndex#0;class#Sequence#0;class#Gibbs#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="44" selection-start="8468" selection-end="8468" vertical-scroll-proportion="2.015504">
+        <state line="450" column="19" selection-start="15746" selection-end="15746" vertical-scroll-proportion="0.41860464">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3475#3483#0" expanded="true" />
-            <element signature="method#getMotifLength#0;class#Main#0" expanded="false" />
-            <element signature="method#benchmark#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
