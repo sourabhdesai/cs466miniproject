@@ -1,1 +1,1 @@
-MOTIF20    8    T*TGTAT*
+MOTIF20    8    CGCT*A*G

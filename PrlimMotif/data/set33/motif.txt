@@ -1,1 +1,1 @@
-MOTIF33    6    *GTGTG
+MOTIF33    6    T*GTCA

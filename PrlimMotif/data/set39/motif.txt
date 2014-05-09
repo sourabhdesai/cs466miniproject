@@ -1,1 +1,1 @@
-MOTIF39    6    *TACGG
+MOTIF39    6    CCTT*G

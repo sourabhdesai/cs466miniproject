@@ -1,1 +1,1 @@
-MOTIF3    8    GTGGA*GG
+MOTIF3    8    CACCCC*G

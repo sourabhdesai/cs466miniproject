@@ -123,7 +123,7 @@ public class Main {
             motifP.close();
             mlenP.close();
 
-            System.out.println("Success on set " + setnum);
+            //System.out.println("Success on set " + setnum);
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -245,7 +245,7 @@ public class Main {
             else {
                 motif = new StringBuilder("");
             }
-            System.out.println(setnum + ": " + motif);
+            //System.out.println(setnum + ": " + motif);
 
             //End timer
             long endTime   = System.currentTimeMillis();
@@ -312,7 +312,7 @@ public class Main {
                 pmotifP.println(as + "    " + cs + "    " + gs + "    " + ts + "    ");
             }
             pmotifP.println("<");
-            System.out.println(setnum + " saved");
+            //System.out.println(setnum + " saved");
 
 
             psitesP.close();
@@ -420,12 +420,20 @@ public class Main {
                     overlap_sites ++;
                 }
             }
-
+            /*
             System.out.println("Evaluation for Set " + setnum);
             System.out.println("Relative Entropy: " + re);
             System.out.println("Number of overlap regions: " + overlap_sites);
             System.out.println("Runtime in miliseconds: " + Long.parseLong(timeR.readLine()));
+            */
 
+            //JSON Print statements
+            System.out.println("\t{");
+            System.out.println("\t\t\"set\": " + setnum + ',');
+            System.out.println("\t\t\"relativeEntropy\": " + re+ ',');
+            System.out.println("\t\t\"overlapSites\": " + overlap_sites + ',');
+            System.out.println("\t\t\"runtime\": " +  Long.parseLong(timeR.readLine()) );
+            System.out.println("\t}" + ( setnum == 69 ? "" : "," ) );
 
 
             seqR.close();
@@ -454,7 +462,7 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-		/*for(int i=0; i<10; i++) {
+		for(int i=0; i<10; i++) {
 			benchmark(8, 1, 500, 10, i);
 			benchmark(8, 0, 500, 10, i+10);
 			benchmark(8, 2, 500, 10, i+20);
@@ -462,13 +470,15 @@ public class Main {
 			benchmark(7, 1, 500, 10, i+40);
 			benchmark(8, 1, 500, 5, i+50);
 			benchmark(8, 1, 500, 20, i+60);		
-		}*/
+		}
         for(int i=0; i<70; i++) {
             findMotif(i);
         }
+        System.out.println("[");
         for(int i=0; i< 70; i++) {
             evaluate(i);
         }
+        System.out.println("]");
 
     }
 

@@ -1,1 +1,1 @@
-MOTIF24    8    *AAG*CGT
+MOTIF24    8    GC**AGTC

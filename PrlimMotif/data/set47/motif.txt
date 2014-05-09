@@ -1,1 +1,1 @@
-MOTIF47    7    GCTATT*
+MOTIF47    7    GGGC*TT

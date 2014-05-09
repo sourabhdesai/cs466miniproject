@@ -1,1 +1,1 @@
-MOTIF56    8    GAAACG*A
+MOTIF56    8    CATTG*CG

@@ -1,1 +1,1 @@
-MOTIF42    7    GCCGCG*
+MOTIF42    7    ACCCG*A

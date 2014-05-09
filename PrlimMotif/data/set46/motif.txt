@@ -1,1 +1,1 @@
-MOTIF46    7    CT*TACT
+MOTIF46    7    GGA*CCT

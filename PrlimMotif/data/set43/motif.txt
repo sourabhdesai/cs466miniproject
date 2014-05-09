@@ -1,1 +1,1 @@
-MOTIF43    7    ACGCC*A
+MOTIF43    7    CC*TTGC

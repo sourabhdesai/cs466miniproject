@@ -1,1 +1,1 @@
-MOTIF45    7    GG*TACT
+MOTIF45    7    A*GGTTG

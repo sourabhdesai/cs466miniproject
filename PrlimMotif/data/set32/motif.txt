@@ -1,1 +1,1 @@
-MOTIF32    6    GGG*GA
+MOTIF32    6    C*TGTT

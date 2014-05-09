@@ -1,1 +1,1 @@
-MOTIF44    7    ACG*TAT
+MOTIF44    7    TCAAT*C

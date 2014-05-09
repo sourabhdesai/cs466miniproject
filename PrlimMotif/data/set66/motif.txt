@@ -1,1 +1,1 @@
-MOTIF66    8    AGATTG*A
+MOTIF66    8    TGG*CTGC

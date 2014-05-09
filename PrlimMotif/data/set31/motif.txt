@@ -1,1 +1,1 @@
-MOTIF31    6    C*GCGG
+MOTIF31    6    CCGT*T

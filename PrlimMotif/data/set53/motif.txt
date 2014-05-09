@@ -1,1 +1,1 @@
-MOTIF53    8    AGAC*AAT
+MOTIF53    8    GACACT*G

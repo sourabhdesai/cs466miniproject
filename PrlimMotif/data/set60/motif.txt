@@ -1,1 +1,1 @@
-MOTIF60    8    G*CATGGA
+MOTIF60    8    AACCGC*T

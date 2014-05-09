@@ -1,1 +1,1 @@
-MOTIF22    8    *AAG*AGG
+MOTIF22    8    AAT*G*AG

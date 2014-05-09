@@ -1,1 +1,1 @@
-MOTIF0    8    TC*CGCTA
+MOTIF0    8    T*CACTGA

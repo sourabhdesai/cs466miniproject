@@ -1,1 +1,1 @@
-MOTIF28    8    TGCG**CG
+MOTIF28    8    TTAC*A*C

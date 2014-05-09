@@ -1,1 +1,1 @@
-MOTIF23    8    *G*GCCTG
+MOTIF23    8    ATTG*G*G

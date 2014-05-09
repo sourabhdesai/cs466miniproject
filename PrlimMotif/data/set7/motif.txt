@@ -1,1 +1,1 @@
-MOTIF7    8    CAACC*GA
+MOTIF7    8    GT*TTGAT

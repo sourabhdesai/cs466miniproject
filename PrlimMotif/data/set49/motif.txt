@@ -1,1 +1,1 @@
-MOTIF49    7    ACAGT*C
+MOTIF49    7    GCG*GTT

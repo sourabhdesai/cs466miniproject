@@ -1,1 +1,1 @@
-MOTIF38    6    TGG*TA
+MOTIF38    6    ACC*CG

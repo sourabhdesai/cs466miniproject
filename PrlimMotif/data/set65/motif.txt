@@ -1,1 +1,1 @@
-MOTIF65    8    AA*GTGTA
+MOTIF65    8    G*CAGGCG

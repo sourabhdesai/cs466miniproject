@@ -1,1 +1,1 @@
-MOTIF40    7    CGG*CCG
+MOTIF40    7    C*CGAAC

@@ -1,1 +1,1 @@
-MOTIF50    8    GTG*CAGG
+MOTIF50    8    GA*GTAAC

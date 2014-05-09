@@ -1,1 +1,1 @@
-MOTIF61    8    T*ATGCAG
+MOTIF61    8    TCATT*CC

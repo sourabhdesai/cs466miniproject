@@ -1,1 +1,1 @@
-MOTIF64    8    TTGG*CTC
+MOTIF64    8    C*TTTAGT

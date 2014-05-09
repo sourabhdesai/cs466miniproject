@@ -1,0 +1,422 @@
+[
+	{
+		"set": 0,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 608
+	},
+	{
+		"set": 1,
+		"relativeEntropy": 0.0,
+		"overlapSites": 9,
+		"runtime": 615
+	},
+	{
+		"set": 2,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 329
+	},
+	{
+		"set": 3,
+		"relativeEntropy": 0.04397154729944995,
+		"overlapSites": 9,
+		"runtime": 351
+	},
+	{
+		"set": 4,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 333
+	},
+	{
+		"set": 5,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 351
+	},
+	{
+		"set": 6,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 347
+	},
+	{
+		"set": 7,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 283
+	},
+	{
+		"set": 8,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 243
+	},
+	{
+		"set": 9,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 283
+	},
+	{
+		"set": 10,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 298
+	},
+	{
+		"set": 11,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 293
+	},
+	{
+		"set": 12,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 231
+	},
+	{
+		"set": 13,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 265
+	},
+	{
+		"set": 14,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 320
+	},
+	{
+		"set": 15,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 335
+	},
+	{
+		"set": 16,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 346
+	},
+	{
+		"set": 17,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 335
+	},
+	{
+		"set": 18,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 327
+	},
+	{
+		"set": 19,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 310
+	},
+	{
+		"set": 20,
+		"relativeEntropy": 0.07548875021634681,
+		"overlapSites": 9,
+		"runtime": 246
+	},
+	{
+		"set": 21,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 340
+	},
+	{
+		"set": 22,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 464
+	},
+	{
+		"set": 23,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 290
+	},
+	{
+		"set": 24,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 253
+	},
+	{
+		"set": 25,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 331
+	},
+	{
+		"set": 26,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 393
+	},
+	{
+		"set": 27,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 331
+	},
+	{
+		"set": 28,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 277
+	},
+	{
+		"set": 29,
+		"relativeEntropy": 0.0415037499278844,
+		"overlapSites": 9,
+		"runtime": 270
+	},
+	{
+		"set": 30,
+		"relativeEntropy": 0.46096404744367614,
+		"overlapSites": 5,
+		"runtime": 142
+	},
+	{
+		"set": 31,
+		"relativeEntropy": 0.0415037499278844,
+		"overlapSites": 6,
+		"runtime": 122
+	},
+	{
+		"set": 32,
+		"relativeEntropy": 0.05097750043269357,
+		"overlapSites": 9,
+		"runtime": 110
+	},
+	{
+		"set": 33,
+		"relativeEntropy": 0.0712287620450551,
+		"overlapSites": 8,
+		"runtime": 94
+	},
+	{
+		"set": 34,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 109
+	},
+	{
+		"set": 35,
+		"relativeEntropy": 0.0,
+		"overlapSites": 9,
+		"runtime": 125
+	},
+	{
+		"set": 36,
+		"relativeEntropy": 0.0712287620450551,
+		"overlapSites": 8,
+		"runtime": 126
+	},
+	{
+		"set": 37,
+		"relativeEntropy": 0.07548875021634677,
+		"overlapSites": 8,
+		"runtime": 129
+	},
+	{
+		"set": 38,
+		"relativeEntropy": 250.44544553318963,
+		"overlapSites": 0,
+		"runtime": 131
+	},
+	{
+		"set": 39,
+		"relativeEntropy": 0.0,
+		"overlapSites": 7,
+		"runtime": 112
+	},
+	{
+		"set": 40,
+		"relativeEntropy": 0.0,
+		"overlapSites": 9,
+		"runtime": 190
+	},
+	{
+		"set": 41,
+		"relativeEntropy": 0.1,
+		"overlapSites": 9,
+		"runtime": 156
+	},
+	{
+		"set": 42,
+		"relativeEntropy": 0.04902249956730638,
+		"overlapSites": 9,
+		"runtime": 210
+	},
+	{
+		"set": 43,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 226
+	},
+	{
+		"set": 44,
+		"relativeEntropy": 0.04902249956730638,
+		"overlapSites": 8,
+		"runtime": 230
+	},
+	{
+		"set": 45,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 197
+	},
+	{
+		"set": 46,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 207
+	},
+	{
+		"set": 47,
+		"relativeEntropy": 0.0,
+		"overlapSites": 10,
+		"runtime": 224
+	},
+	{
+		"set": 48,
+		"relativeEntropy": 0.08300749985576879,
+		"overlapSites": 7,
+		"runtime": 179
+	},
+	{
+		"set": 49,
+		"relativeEntropy": 0.07548875021634681,
+		"overlapSites": 9,
+		"runtime": 170
+	},
+	{
+		"set": 50,
+		"relativeEntropy": 0.0,
+		"overlapSites": 5,
+		"runtime": 313
+	},
+	{
+		"set": 51,
+		"relativeEntropy": 0.0,
+		"overlapSites": 5,
+		"runtime": 368
+	},
+	{
+		"set": 52,
+		"relativeEntropy": 0.0,
+		"overlapSites": 5,
+		"runtime": 322
+	},
+	{
+		"set": 53,
+		"relativeEntropy": 0.0,
+		"overlapSites": 5,
+		"runtime": 312
+	},
+	{
+		"set": 54,
+		"relativeEntropy": 0.0,
+		"overlapSites": 5,
+		"runtime": 241
+	},
+	{
+		"set": 55,
+		"relativeEntropy": 0.0,
+		"overlapSites": 5,
+		"runtime": 280
+	},
+	{
+		"set": 56,
+		"relativeEntropy": 0.0,
+		"overlapSites": 5,
+		"runtime": 311
+	},
+	{
+		"set": 57,
+		"relativeEntropy": 0.0,
+		"overlapSites": 5,
+		"runtime": 341
+	},
+	{
+		"set": 58,
+		"relativeEntropy": 0.0,
+		"overlapSites": 5,
+		"runtime": 331
+	},
+	{
+		"set": 59,
+		"relativeEntropy": 0.0,
+		"overlapSites": 5,
+		"runtime": 294
+	},
+	{
+		"set": 60,
+		"relativeEntropy": 0.0,
+		"overlapSites": 20,
+		"runtime": 320
+	},
+	{
+		"set": 61,
+		"relativeEntropy": 0.1081943562112613,
+		"overlapSites": 17,
+		"runtime": 304
+	},
+	{
+		"set": 62,
+		"relativeEntropy": 0.060837988358435555,
+		"overlapSites": 18,
+		"runtime": 339
+	},
+	{
+		"set": 63,
+		"relativeEntropy": 0.0,
+		"overlapSites": 20,
+		"runtime": 320
+	},
+	{
+		"set": 64,
+		"relativeEntropy": 0.05097750043269357,
+		"overlapSites": 19,
+		"runtime": 290
+	},
+	{
+		"set": 65,
+		"relativeEntropy": 0.04671751226140186,
+		"overlapSites": 19,
+		"runtime": 340
+	},
+	{
+		"set": 66,
+		"relativeEntropy": 0.03724376175659269,
+		"overlapSites": 18,
+		"runtime": 333
+	},
+	{
+		"set": 67,
+		"relativeEntropy": 0.0,
+		"overlapSites": 20,
+		"runtime": 370
+	},
+	{
+		"set": 68,
+		"relativeEntropy": 0.0,
+		"overlapSites": 19,
+		"runtime": 360
+	},
+	{
+		"set": 69,
+		"relativeEntropy": 0.0,
+		"overlapSites": 20,
+		"runtime": 348
+	}
+]

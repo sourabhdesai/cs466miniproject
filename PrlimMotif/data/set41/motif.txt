@@ -1,1 +1,1 @@
-MOTIF41    7    TAATAC*
+MOTIF41    7    A*CTGCT

@@ -1,1 +1,1 @@
-MOTIF4    8    *TTTGCGC
+MOTIF4    8    GCAA*CGT

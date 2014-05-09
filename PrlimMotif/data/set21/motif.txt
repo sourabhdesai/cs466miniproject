@@ -1,1 +1,1 @@
-MOTIF21    8    AT**GAAT
+MOTIF21    8    TA*GT*TT

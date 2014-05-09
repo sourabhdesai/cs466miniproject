@@ -1,1 +1,1 @@
-MOTIF52    8    TTA*AGGG
+MOTIF52    8    TGATTT*T

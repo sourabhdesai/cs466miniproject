@@ -1,1 +1,1 @@
-MOTIF1    8    ATGAGTC*
+MOTIF1    8    AGC*ACCG

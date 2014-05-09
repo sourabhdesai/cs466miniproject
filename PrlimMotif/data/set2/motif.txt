@@ -1,1 +1,1 @@
-MOTIF2    8    GAGGGTT*
+MOTIF2    8    AG*GCCTC

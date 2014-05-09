@@ -1,1 +1,1 @@
-MOTIF9    8    C*ACGACG
+MOTIF9    8    CGAGCC*A

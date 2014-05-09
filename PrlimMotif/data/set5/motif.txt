@@ -1,1 +1,1 @@
-MOTIF5    8    TCCGAC*T
+MOTIF5    8    T*CCATTT

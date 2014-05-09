@@ -2,6 +2,17 @@ import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
 
+/*
+    This is our unfinished (well, untested really) implementation of the Gibbs sampling algorithm for Motif Finding.
+    The bulk of the algorithm was created by following the steps here: http://bix.ucsd.edu/bioalgorithms/presentations/Ch12_RandAlgs.pdf .
+    There was also information from other sources that gave us the insight to perform smoothing on the Profile matrix to avoid zero values,
+    as well as to add the logs of probabilities instead of multiplying them to avoid floating point value underflow.
+    I say that this implementation is really just untested because so far, we have only really run this algorithm through to a maximum of 10,000 iterations.
+    With only 10,000 iterations, it does not seem to find any good motifs between the strands.
+    In reality, I would like to try to run our implementation through much more iterations for each data set to get to a proper answer.
+    For our report, we have detailed the results from our greedy algorithm in Main.java .
+ */
+
 public class Gibbs {
 
     public static void main(String[] args) {
@@ -20,7 +31,13 @@ public class Gibbs {
 	    */
 
         try {
-            findMotif( 16 );
+            long[] runtimes = new long[70]; // 70 data sets
+            for (int i = 0; i < 70; i++) {
+                long start = System.currentTimeMillis();
+                findMotif( i );
+                runtimes[i] = System.currentTimeMillis() - start;
+                System.out.println( "Data Sets : " + i + "\n\tRuntime : " + runtimes[i] );
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -38,13 +55,13 @@ public class Gibbs {
             sequences[i] = new Sequence(motifLength, sequencesStrings[i]);
         }
 
-        float[][] oldprofile = new float[motifLength][4];
+        //float[][] oldprofile = new float[motifLength][4]; // used if we are stopping iteration using a scoring mechanism ... not used in current implementation of just set number of iterations
         float[][] profile    = new float[motifLength][4];
         fillArray(profile,0f);
 
-        int differenceThresh = 1, newscore = 0, oldscore = Integer.MIN_VALUE + differenceThresh;
+        //int differenceThresh = 1, newscore = 0, oldscore = Integer.MIN_VALUE + differenceThresh; // used if we are stopping iteration using a scoring mechanism ... not used in current implementation of just set number of iterations
         int iterations = 0;
-        while ( iterations < 90000) {
+        while ( iterations < 10000) {
 
             iterations++;
             //System.out.println("---------------------------------\ni : " + iterations + "\nNewScore : " + newscore + "\nOldScore : " + oldscore);
@@ -75,18 +92,17 @@ public class Gibbs {
             for (int i = 0; i < probDist.length; i++)
                 probDist[i] = 0f; // Initialize all values to 0
 
+            // Perform smoothing on the Profile Matrix
+            for (int x = 0; x < profile.length; x++)
+                for (int y = 0; y < profile[0].length; y++)
+                    profile[x][y] += 0.0001; // Smoothing by adding 0.0001 to all values ... to avoid having 0s, they will create problems with the algorithm ( Math.log(0) == -Infinity )
+
             for (int i = 0; i < sequences[removedSequenceIndex].possibleMotifs.length; i++) {
 
                 String motif = sequences[removedSequenceIndex].possibleMotifs[i];
 
                 // create probability distribution for next starting point in sequences[removedSequenceIndex]
                 for (int character = 0; character < motif.length(); character++) {
-                    /*
-                    System.out.println("Profile \'A\' : " + profile[character][0]);
-                    System.out.println("Profile \'C\' : " + profile[character][1]);
-                    System.out.println("Profile \'G\' : " + profile[character][2]);
-                    System.out.println("Profile \'T\' : " + profile[character][3]);
-                    */
                     switch ( motif.charAt(character) ) {
                         case 'A':
                             probDist[i] += profile[character][0] == 0 ? 0 : Math.log(profile[character][0] / (sequences[removedSequenceIndex].Afreq / sequences[removedSequenceIndex].length() ) ); // 0 == A
@@ -145,8 +161,9 @@ public class Gibbs {
                 endProb   = endProb + probDist[i+1];
                 //System.out.println("startProb : " + startProb + " , endProb : " + endProb);
             }
-
+            /*
             // Calculate new and oldscores
+            // used if we are stopping iteration using a scoring mechanism ... not used in current implementation of just set number of iterations
             oldscore = newscore;
             newscore = 0;
             for (int x = 0; x < profile.length; x++) {
@@ -155,6 +172,7 @@ public class Gibbs {
                 }
             }
             copyArray(profile,oldprofile);
+            */
             fillArray(profile,0f);
         }
 

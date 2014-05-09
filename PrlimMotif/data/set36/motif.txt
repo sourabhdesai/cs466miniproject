@@ -1,1 +1,1 @@
-MOTIF36    6    GTCGC*
+MOTIF36    6    AT*CCG

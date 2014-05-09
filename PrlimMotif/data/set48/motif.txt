@@ -1,1 +1,1 @@
-MOTIF48    7    *TGGATG
+MOTIF48    7    TATAG*G
